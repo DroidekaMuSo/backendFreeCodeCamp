@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start:development": "cross-env NODE_ENV=development ts-node-dev ./src/index.ts",
-    "start:test":"cross-env NODE_ENV=test ts-node ./src/index.ts",
-    "start:production":"cross-env NODE_ENV=production ts-node ./src/index.ts",
-    "lint":"eslint src/**/*.ts",
-    "format":"eslint src/**/*.ts --fix",
+    "start:test": "cross-env NODE_ENV=test ts-node ./src/index.ts",
+    "start:production": "cross-env NODE_ENV=production ts-node ./src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
     "build-tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
