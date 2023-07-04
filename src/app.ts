@@ -17,7 +17,6 @@ class App {
     this.env = NODE_ENV || "development";
 
     this.initRoutes(routes);
-    this.listen();
   }
 
   /**
@@ -34,11 +33,11 @@ class App {
    */
   public listen() {
     this.app.listen(this.port, () => {
-      displayRoutes(this.app);
       logger.info(`==============================`);
       logger.info(`====== ENV: ${this.env} ======`);
       logger.info(`🎢 App running on port ${this.port}`);
       logger.info(`==============================`);
+      displayRoutes(this.app);
     });
   }
 }
