@@ -11,6 +11,7 @@ import { logger, stream } from "./utils/logger";
 import corsConfig from "./config/cors.config";
 
 import { NODE_ENV, PORT, API_VERSION, LOG_FORMAT } from "./config/config";
+import { mySqlConnection } from "./db/mySql";
 
 class App {
   public app: express.Application;
@@ -59,7 +60,7 @@ class App {
    * connectToDataBase
    */
   private connectToDataBase() {
-    //TODO: Initializa connection
+    mySqlConnection();
   }
 
   private initMiddlewares() {
